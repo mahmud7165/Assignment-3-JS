@@ -48,9 +48,10 @@ console.log(email);
 
 var startingSalary = 20000;
 var experience = 5;
-var currentSalary = startingSalary;
+var recentSalary = startingSalary;
 for (i = 1; i <= experience; i++) {
-  currentSalary = currentSalary * 1.05;
+  //   recentSalary = recentSalary * 1.05;
+  recentSalary = parseFloat((recentSalary * 1.05).toFixed(2));
 }
-currentSalary = currentSalary.toFixed(2);
-console.log(currentSalary);
+
+console.log(recentSalary);
